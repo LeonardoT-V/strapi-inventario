@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facultades",
+  "info": {
+    "singularName": "facultad",
+    "pluralName": "facultades",
+    "displayName": "facultad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "habilitado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "unique": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "carreras": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::carrera.carrera",
+      "mappedBy": "facultad"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articulos",
+  "info": {
+    "singularName": "articulo",
+    "pluralName": "articulos",
+    "displayName": "articulo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "habilitado": {
+      "type": "boolean",
+      "default": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "carrera": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::carrera.carrera",
+      "inversedBy": "articulos"
+    },
+    "aula": {
+      "type": "string"
+    },
+    "condicion": {
+      "type": "string"
+    },
+    "registrado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "articulos"
+    },
+    "url_img": {
+      "type": "text"
+    },
+    "mantenimientos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mantenimiento.mantenimiento",
+      "mappedBy": "articulo"
+    },
+    "cambios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cambio.cambio",
+      "mappedBy": "articulo"
+    }
+  }
+}

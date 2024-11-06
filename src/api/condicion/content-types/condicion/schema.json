@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "condiciones",
+  "info": {
+    "singularName": "condicion",
+    "pluralName": "condiciones",
+    "displayName": "condicion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "detalle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mantenimientos",
+  "info": {
+    "singularName": "mantenimiento",
+    "pluralName": "mantenimientos",
+    "displayName": "mantenimiento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comentario": {
+      "type": "text"
+    },
+    "articulo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::articulo.articulo",
+      "inversedBy": "mantenimientos"
+    },
+    "encargado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "mantenimientos"
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "detalle": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

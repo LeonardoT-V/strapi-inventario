@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carreras",
+  "info": {
+    "singularName": "carrera",
+    "pluralName": "carreras",
+    "displayName": "carrera",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "habilitado": {
+      "type": "boolean",
+      "default": true
+    },
+    "nombre": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "facultad": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::facultad.facultad",
+      "inversedBy": "carreras"
+    },
+    "articulos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::articulo.articulo",
+      "mappedBy": "carrera"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cambios",
+  "info": {
+    "singularName": "cambio",
+    "pluralName": "cambios",
+    "displayName": "cambio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "responsable": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "cambios"
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "articulo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::articulo.articulo",
+      "inversedBy": "cambios"
+    },
+    "comentario": {
+      "type": "text"
+    },
+    "prev_value": {
+      "type": "text",
+      "required": false
+    },
+    "llave": {
+      "type": "string",
+      "required": true
+    },
+    "new_value": {
+      "type": "text"
+    }
+  }
+}
