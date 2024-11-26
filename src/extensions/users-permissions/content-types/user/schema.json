@@ -82,6 +82,12 @@
       "relation": "oneToMany",
       "target": "api::cambio.cambio",
       "mappedBy": "responsable"
+    },
+    "area_permisos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::area-permiso.area-permiso",
+      "mappedBy": "user"
     }
   }
 }

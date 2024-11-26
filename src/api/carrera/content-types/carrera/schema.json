@@ -35,6 +35,12 @@
       "relation": "oneToMany",
       "target": "api::articulo.articulo",
       "mappedBy": "carrera"
+    },
+    "area_permisos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::area-permiso.area-permiso",
+      "mappedBy": "carrera"
     }
   }
 }

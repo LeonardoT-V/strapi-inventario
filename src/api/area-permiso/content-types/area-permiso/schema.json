@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "area_permisos",
+  "info": {
+    "singularName": "area-permiso",
+    "pluralName": "area-permisos",
+    "displayName": "area_permiso",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carrera": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::carrera.carrera",
+      "inversedBy": "area_permisos"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "area_permisos"
+    },
+    "is_supervisor": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

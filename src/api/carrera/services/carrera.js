@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * carrera service
  */
 
-const { createCoreService } = require('@strapi/strapi').factories;
+const { createCoreService } = require("@strapi/strapi").factories;
 
-module.exports = createCoreService('api::carrera.carrera');
+module.exports = createCoreService("api::carrera.carrera");

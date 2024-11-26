@@ -785,6 +785,11 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::cambio.cambio'
     >;
+    area_permisos: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::area-permiso.area-permiso'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -795,6 +800,48 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'plugin::users-permissions.user',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiAreaPermisoAreaPermiso extends Schema.CollectionType {
+  collectionName: 'area_permisos';
+  info: {
+    singularName: 'area-permiso';
+    pluralName: 'area-permisos';
+    displayName: 'area_permiso';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    carrera: Attribute.Relation<
+      'api::area-permiso.area-permiso',
+      'manyToOne',
+      'api::carrera.carrera'
+    >;
+    user: Attribute.Relation<
+      'api::area-permiso.area-permiso',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    is_supervisor: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::area-permiso.area-permiso',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::area-permiso.area-permiso',
       'oneToOne',
       'admin::user'
     > &
@@ -840,6 +887,7 @@ export interface ApiArticuloArticulo extends Schema.CollectionType {
       'oneToMany',
       'api::cambio.cambio'
     >;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -926,6 +974,11 @@ export interface ApiCarreraCarrera extends Schema.CollectionType {
       'oneToMany',
       'api::articulo.articulo'
     >;
+    area_permisos: Attribute.Relation<
+      'api::carrera.carrera',
+      'oneToMany',
+      'api::area-permiso.area-permiso'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -936,36 +989,6 @@ export interface ApiCarreraCarrera extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::carrera.carrera',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiCondicionCondicion extends Schema.CollectionType {
-  collectionName: 'condiciones';
-  info: {
-    singularName: 'condicion';
-    pluralName: 'condiciones';
-    displayName: 'condicion';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    detalle: Attribute.String & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::condicion.condicion',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::condicion.condicion',
       'oneToOne',
       'admin::user'
     > &
@@ -1072,10 +1095,10 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::area-permiso.area-permiso': ApiAreaPermisoAreaPermiso;
       'api::articulo.articulo': ApiArticuloArticulo;
       'api::cambio.cambio': ApiCambioCambio;
       'api::carrera.carrera': ApiCarreraCarrera;
-      'api::condicion.condicion': ApiCondicionCondicion;
       'api::facultad.facultad': ApiFacultadFacultad;
       'api::mantenimiento.mantenimiento': ApiMantenimientoMantenimiento;
     }
