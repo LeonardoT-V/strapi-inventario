@@ -1,0 +1,232 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::cambio.cambio",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "tipo",
+      "defaultSortBy": "tipo",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "responsable": {
+        "edit": {
+          "label": "responsable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "responsable",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "tipo": {
+        "edit": {
+          "label": "tipo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tipo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "articulo": {
+        "edit": {
+          "label": "articulo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "nombre"
+        },
+        "list": {
+          "label": "articulo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "comentario": {
+        "edit": {
+          "label": "comentario",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "comentario",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "prev_value": {
+        "edit": {
+          "label": "prev_value",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "prev_value",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "llave": {
+        "edit": {
+          "label": "llave",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "llave",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "new_value": {
+        "edit": {
+          "label": "new_value",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "new_value",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "responsable",
+        "tipo",
+        "articulo"
+      ],
+      "edit": [
+        [
+          {
+            "name": "responsable",
+            "size": 6
+          },
+          {
+            "name": "tipo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "articulo",
+            "size": 6
+          },
+          {
+            "name": "comentario",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "prev_value",
+            "size": 6
+          },
+          {
+            "name": "llave",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "new_value",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::cambio.cambio"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

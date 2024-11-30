@@ -876,7 +876,6 @@ export interface ApiArticuloArticulo extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
-    url_img: Attribute.Text;
     mantenimientos: Attribute.Relation<
       'api::articulo.articulo',
       'oneToMany',

@@ -1,0 +1,194 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::mantenimiento.mantenimiento",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "tipo",
+      "defaultSortBy": "tipo",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "comentario": {
+        "edit": {
+          "label": "comentario",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "comentario",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "articulo": {
+        "edit": {
+          "label": "articulo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "nombre"
+        },
+        "list": {
+          "label": "articulo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "encargado": {
+        "edit": {
+          "label": "encargado",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "encargado",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "tipo": {
+        "edit": {
+          "label": "tipo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tipo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "detalle": {
+        "edit": {
+          "label": "detalle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "detalle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "comentario",
+        "articulo",
+        "encargado"
+      ],
+      "edit": [
+        [
+          {
+            "name": "comentario",
+            "size": 6
+          },
+          {
+            "name": "articulo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "encargado",
+            "size": 6
+          },
+          {
+            "name": "tipo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "detalle",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::mantenimiento.mantenimiento"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

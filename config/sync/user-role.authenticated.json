@@ -1,0 +1,121 @@
+{
+  "name": "Authenticated",
+  "description": "Default role given to authenticated user.",
+  "type": "authenticated",
+  "permissions": [
+    {
+      "action": "api::area-permiso.area-permiso.find"
+    },
+    {
+      "action": "api::area-permiso.area-permiso.findOne"
+    },
+    {
+      "action": "api::articulo.articulo.create"
+    },
+    {
+      "action": "api::articulo.articulo.delete"
+    },
+    {
+      "action": "api::articulo.articulo.find"
+    },
+    {
+      "action": "api::articulo.articulo.findOne"
+    },
+    {
+      "action": "api::articulo.articulo.update"
+    },
+    {
+      "action": "api::cambio.cambio.create"
+    },
+    {
+      "action": "api::cambio.cambio.delete"
+    },
+    {
+      "action": "api::cambio.cambio.find"
+    },
+    {
+      "action": "api::cambio.cambio.findOne"
+    },
+    {
+      "action": "api::cambio.cambio.update"
+    },
+    {
+      "action": "api::carrera.carrera.create"
+    },
+    {
+      "action": "api::carrera.carrera.delete"
+    },
+    {
+      "action": "api::carrera.carrera.find"
+    },
+    {
+      "action": "api::carrera.carrera.findOne"
+    },
+    {
+      "action": "api::carrera.carrera.update"
+    },
+    {
+      "action": "api::facultad.facultad.create"
+    },
+    {
+      "action": "api::facultad.facultad.delete"
+    },
+    {
+      "action": "api::facultad.facultad.find"
+    },
+    {
+      "action": "api::facultad.facultad.findOne"
+    },
+    {
+      "action": "api::facultad.facultad.update"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.create"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.delete"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.find"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.findOne"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.update"
+    },
+    {
+      "action": "plugin::upload.content-api.destroy"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.changePassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.role.find"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::area-permiso.area-permiso.find"
+    },
+    {
+      "action": "api::area-permiso.area-permiso.findOne"
+    },
+    {
+      "action": "api::articulo.articulo.find"
+    },
+    {
+      "action": "api::articulo.articulo.findOne"
+    },
+    {
+      "action": "api::cambio.cambio.find"
+    },
+    {
+      "action": "api::cambio.cambio.findOne"
+    },
+    {
+      "action": "api::carrera.carrera.find"
+    },
+    {
+      "action": "api::carrera.carrera.findOne"
+    },
+    {
+      "action": "api::facultad.facultad.find"
+    },
+    {
+      "action": "api::facultad.facultad.findOne"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.find"
+    },
+    {
+      "action": "api::mantenimiento.mantenimiento.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    }
+  ]
+}

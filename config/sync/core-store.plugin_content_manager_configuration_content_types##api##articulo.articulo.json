@@ -1,0 +1,310 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::articulo.articulo",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "nombre",
+      "defaultSortBy": "nombre",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "nombre": {
+        "edit": {
+          "label": "nombre",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nombre",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "habilitado": {
+        "edit": {
+          "label": "habilitado",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "habilitado",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "descripcion": {
+        "edit": {
+          "label": "descripcion",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "descripcion",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "carrera": {
+        "edit": {
+          "label": "carrera",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "nombre"
+        },
+        "list": {
+          "label": "carrera",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "aula": {
+        "edit": {
+          "label": "aula",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "aula",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "condicion": {
+        "edit": {
+          "label": "condicion",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "condicion",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "registrado": {
+        "edit": {
+          "label": "registrado",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "registrado",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "url_img": {
+        "edit": {
+          "label": "url_img",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "url_img",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "mantenimientos": {
+        "edit": {
+          "label": "mantenimientos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "tipo"
+        },
+        "list": {
+          "label": "mantenimientos",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cambios": {
+        "edit": {
+          "label": "cambios",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "tipo"
+        },
+        "list": {
+          "label": "cambios",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "nombre",
+        "habilitado",
+        "descripcion"
+      ],
+      "edit": [
+        [
+          {
+            "name": "nombre",
+            "size": 6
+          },
+          {
+            "name": "habilitado",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "descripcion",
+            "size": 6
+          },
+          {
+            "name": "carrera",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "aula",
+            "size": 6
+          },
+          {
+            "name": "condicion",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "registrado",
+            "size": 6
+          },
+          {
+            "name": "url_img",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "mantenimientos",
+            "size": 6
+          },
+          {
+            "name": "cambios",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::articulo.articulo"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -41,9 +41,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "articulos"
     },
-    "url_img": {
-      "type": "text"
-    },
     "mantenimientos": {
       "type": "relation",
       "relation": "oneToMany",
