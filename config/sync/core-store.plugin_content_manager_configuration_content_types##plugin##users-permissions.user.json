@@ -206,6 +206,63 @@
           "sortable": false
         }
       },
+      "cedula": {
+        "edit": {
+          "label": "cedula",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cedula",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "nombres": {
+        "edit": {
+          "label": "nombres",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nombres",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "apellidos": {
+        "edit": {
+          "label": "apellidos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "apellidos",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "articulos_asignados": {
+        "edit": {
+          "label": "articulos_asignados",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "nombre"
+        },
+        "list": {
+          "label": "articulos_asignados",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -320,6 +377,26 @@
           },
           {
             "name": "area_permisos",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "cedula",
+            "size": 6
+          },
+          {
+            "name": "nombres",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "apellidos",
+            "size": 6
+          },
+          {
+            "name": "articulos_asignados",
             "size": 6
           }
         ]

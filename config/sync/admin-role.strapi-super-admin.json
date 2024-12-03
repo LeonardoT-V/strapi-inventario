@@ -62,10 +62,10 @@
           "aula",
           "condicion",
           "registrado",
-          "url_img",
           "mantenimientos",
           "cambios",
-          "image"
+          "image",
+          "responsable"
         ]
       },
       "conditions": []
@@ -90,10 +90,10 @@
           "aula",
           "condicion",
           "registrado",
-          "url_img",
           "mantenimientos",
           "cambios",
-          "image"
+          "image",
+          "responsable"
         ]
       },
       "conditions": []
@@ -111,10 +111,10 @@
           "aula",
           "condicion",
           "registrado",
-          "url_img",
           "mantenimientos",
           "cambios",
-          "image"
+          "image",
+          "responsable"
         ]
       },
       "conditions": []
@@ -568,7 +568,11 @@
           "articulos",
           "mantenimientos",
           "cambios",
-          "area_permisos"
+          "area_permisos",
+          "cedula",
+          "nombres",
+          "apellidos",
+          "articulos_asignados"
         ]
       },
       "conditions": []
@@ -598,7 +602,11 @@
           "articulos",
           "mantenimientos",
           "cambios",
-          "area_permisos"
+          "area_permisos",
+          "cedula",
+          "nombres",
+          "apellidos",
+          "articulos_asignados"
         ]
       },
       "conditions": []
@@ -621,7 +629,11 @@
           "articulos",
           "mantenimientos",
           "cambios",
-          "area_permisos"
+          "area_permisos",
+          "cedula",
+          "nombres",
+          "apellidos",
+          "articulos_asignados"
         ]
       },
       "conditions": []

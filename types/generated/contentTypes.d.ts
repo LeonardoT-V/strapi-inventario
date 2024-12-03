@@ -790,6 +790,14 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::area-permiso.area-permiso'
     >;
+    cedula: Attribute.String & Attribute.Required & Attribute.Unique;
+    nombres: Attribute.String & Attribute.Required;
+    apellidos: Attribute.String & Attribute.Required;
+    articulos_asignados: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::articulo.articulo'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -887,6 +895,11 @@ export interface ApiArticuloArticulo extends Schema.CollectionType {
       'api::cambio.cambio'
     >;
     image: Attribute.Media;
+    responsable: Attribute.Relation<
+      'api::articulo.articulo',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

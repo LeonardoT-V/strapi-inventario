@@ -88,6 +88,25 @@
       "relation": "oneToMany",
       "target": "api::area-permiso.area-permiso",
       "mappedBy": "user"
+    },
+    "cedula": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "nombres": {
+      "type": "string",
+      "required": true
+    },
+    "apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "articulos_asignados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::articulo.articulo",
+      "mappedBy": "responsable"
     }
   }
 }

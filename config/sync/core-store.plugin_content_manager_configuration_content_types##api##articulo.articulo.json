@@ -119,20 +119,6 @@
           "sortable": true
         }
       },
-      "url_img": {
-        "edit": {
-          "label": "url_img",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "url_img",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "mantenimientos": {
         "edit": {
           "label": "mantenimientos",
@@ -175,6 +161,21 @@
           "label": "image",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "responsable": {
+        "edit": {
+          "label": "responsable",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "responsable",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -278,10 +279,6 @@
           {
             "name": "registrado",
             "size": 6
-          },
-          {
-            "name": "url_img",
-            "size": 6
           }
         ],
         [
@@ -297,6 +294,10 @@
         [
           {
             "name": "image",
+            "size": 6
+          },
+          {
+            "name": "responsable",
             "size": 6
           }
         ]

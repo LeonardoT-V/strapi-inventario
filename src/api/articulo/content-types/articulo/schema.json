@@ -60,6 +60,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "responsable": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "articulos_asignados"
     }
   }
 }

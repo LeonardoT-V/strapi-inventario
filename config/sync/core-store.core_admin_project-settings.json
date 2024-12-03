@@ -1,0 +1,28 @@
+{
+  "key": "core_admin_project-settings",
+  "value": {
+    "menuLogo": {
+      "name": "LOGO-ULEAM (1).png",
+      "hash": "LOGO_ULEAM_1_dc881dc481",
+      "url": "https://res.cloudinary.com/dezxozpw2/image/upload/v1732930662/LOGO_ULEAM_1_dc881dc481.png",
+      "width": 683,
+      "height": 464,
+      "ext": ".png",
+      "size": 38.4,
+      "provider": "cloudinary"
+    },
+    "authLogo": {
+      "name": "LOGO-ULEAM (1).png",
+      "hash": "LOGO_ULEAM_1_5555493c5a",
+      "url": "https://res.cloudinary.com/dezxozpw2/image/upload/v1732930662/LOGO_ULEAM_1_5555493c5a.png",
+      "width": 683,
+      "height": 464,
+      "ext": ".png",
+      "size": 38.4,
+      "provider": "cloudinary"
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
